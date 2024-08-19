@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">clase2</string>
+    <string name="formulario">Formulario</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellido">Apellidos</string>
+    <string name="edad">Edad</string>
+    <string name="ciudad">Ciudad</string>
+    <string name="barrio">Barrio</string>
+    <string name="guardar">Guardar</string>
+    <string name="borrar">Borrar</string>
+</resources>
