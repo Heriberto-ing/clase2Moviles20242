@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     TextView formulario;
     Button guardar, borrar;
     String nombreUsuario, apeUsuario, edadUsuario, ciudadUsuario, barrioUsuario;
+    String TAG = "Test";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
