@@ -3,6 +3,7 @@ package com.example.clase2;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.nfc.Tag;
@@ -18,9 +19,10 @@ public class MainActivity extends AppCompatActivity {
 
     EditText ingresarNombre, ingresarApe, ingresarEdad, ingresasCiudad, ingresarBarrio;
     TextView formulario, estadoCV;
-    Button guardar, borrar;
+    Button guardar, borrar, nueva;
     String nombreUsuario, apeUsuario, edadUsuario, ciudadUsuario, barrioUsuario, EstadoTexto;
     String EstadoAnterior = "None";
+    Persona datosUsuario;
     //String TAG = "Test";
 
     @Override
@@ -36,10 +38,36 @@ public class MainActivity extends AppCompatActivity {
         formulario = (TextView) findViewById(R.id.txvFormulario);
         guardar = (Button) findViewById(R.id.btnGuardar);
         borrar = (Button) findViewById(R.id.btnBorrar);
+        nueva = (Button) findViewById(R.id.btnNueva);
         estadoCV = (TextView) findViewById(R.id.estadoCV);
+        datosUsuario = new Persona(1020304050,(byte)50,"Pedro","Perez");
 
         actualizarEstado("onCreate");
         Log.d("Ciclo de vida", "Estoy en el onCreate");
+
+        nueva.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Log.d("Ciclo de vida","ESTOY EN EL BOTÓN");
+
+                String nombre = ingresarNombre.getText().toString();
+                String apellido = ingresarApe.getText().toString();
+                String edad = ingresarEdad.getText().toString();
+                String ciudad = ingresasCiudad.getText().toString();
+                String barrio = ingresarBarrio.getText().toString();
+
+                Intent i = new Intent(MainActivity.this, MainActivity2.class);
+                i.putExtra("Nombre", nombre);
+                i.putExtra("Apellido", apellido);
+                i.putExtra("Edad", edad);
+                i.putExtra("Ciudad", ciudad);
+                i.putExtra("Barrio", barrio);
+
+                startActivity(i);
+
+            }
+        });
 
     }
 

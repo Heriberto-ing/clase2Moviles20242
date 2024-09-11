@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="2"
+    android:orientation="vertical"
+    tools:context=".MainActivity2">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="410dp"
+        android:layout_height="90dp"
+        android:src="@raw/imagen"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/IngreseNombre"
+            android:text="@string/nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/IngreseApe"
+            android:text="@string/apellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/IngreseEdad"
+            android:text="@string/edad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/IngreseCiudad"
+            android:text="@string/ciudad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/IngreseBarrio"
+            android:text="@string/barrio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnNueva"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:text="@string/nueva">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btnEnlace"
+            android:layout_width="208dp"
+            android:layout_height="wrap_content"
+            android:text=   "@string/enlace">
+
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/estadoCV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/estadoCV"
+            android:textSize="15sp">
+        </TextView>
+
+    </LinearLayout>
+
+</LinearLayout>
+

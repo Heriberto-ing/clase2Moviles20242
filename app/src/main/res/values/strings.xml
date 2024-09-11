@@ -1,12 +1,14 @@
 <resources>
-    <string name="app_name">clase2</string>
-    <string name="formulario">Formulario</string>
-    <string name="nombre">Nombre</string>
-    <string name="apellido">Apellidos</string>
-    <string name="edad">Edad</string>
-    <string name="ciudad">Ciudad</string>
-    <string name="barrio">Barrio</string>
-    <string name="guardar">Guardar</string>
-    <string name="borrar">Borrar</string>
-    <string name="estadoCV">Estado ciclo de vida</string>
+    <string name="app_name" translatable="false">clase2</string>
+    <string name="formulario" translatable="false">Formulario</string>
+    <string name="nombre" translatable="false">Nombre</string>
+    <string name="apellido" translatable="false">Apellidos</string>
+    <string name="edad" translatable="false">Edad</string>
+    <string name="ciudad" translatable="false">Ciudad</string>
+    <string name="barrio" translatable="false">Barrio</string>
+    <string name="guardar" translatable="false">Guardar</string>
+    <string name="borrar" translatable="false">Borrar</string>
+    <string name="nueva" translatable="false">Nueva</string>
+    <string name="enlace" translatable="false">Youtube</string>
+    <string name="estadoCV" translatable="false">Estado ciclo de vida</string>
 </resources>
